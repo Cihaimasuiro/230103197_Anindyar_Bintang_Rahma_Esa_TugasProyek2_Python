@@ -6,13 +6,13 @@ Aplikasi ini adalah alat CLI (Command Line Interface) sederhana untuk memuat dat
 
   - **Nama:** Anindyar Bintang Rahma Esa
   - **NIM:** 230103197
-  - **GitHub:** `https://github.com/Cihaimasuiro`
+  - **GitHub:** `https://github.com/Cihaimasuiro/230103197_Anindyar_Bintang_Rahma_Esa_TugasProyek2_Python`
 
 -----
 
 ## 🚀 Fitur Utama
 
-  * **Struktur Paket Modular:** Logika inti (Mahasiswa, Penilaian, Rekap) dipisahkan ke dalam paket `tracker/` yang modular.
+  * **Struktur Paket Modular:** Logika inti (Mahasiswa, Penilaian, Rekap) dipisahkan ke dalam paket `student_performance_tracker/` yang modular.
   * **Desain OOP:** Data dikelola menggunakan kelas-kelas seperti `Mahasiswa` dan `Penilaian`.
   * **Enkapsulasi:** Menggunakan `@property` dan `@setter` untuk memvalidasi input data (misal, nilai dan kehadiran harus 0-100).
   * **Manajemen Data:** Memuat data mahasiswa dan nilai dari file `.csv`.
@@ -24,15 +24,15 @@ Aplikasi ini adalah alat CLI (Command Line Interface) sederhana untuk memuat dat
 Berikut adalah struktur folder akhir dari proyek ini:
 
 ```
-student_performance_tracker/
+230103197_Anindyar_Bintang_Rahma_Esa_TugasProyek2_Python/
 ├── .venv/                   # Lingkungan virtual (dibuat lokal)
 ├── data/                    # Folder untuk data input
 │   ├── attendance.csv
 │   └── grades.csv
 ├── out/                     # Folder untuk hasil laporan
 │   └── report.md            # Dihasilkan oleh aplikasi
-├── tracker/                 # Paket modular utama
-│   ├── __init__.py          # Mengubah 'tracker' menjadi paket
+├── student_performance_tracker/ # Paket modular utama
+│   ├── __init__.py          # Mengubah folder ini menjadi paket
 │   ├── mahasiswa.py         # Definisi class Mahasiswa
 │   ├── penilaian.py         # Definisi class Penilaian
 │   ├── rekap_kelas.py       # Definisi class RekapKelas (manajer)
@@ -60,6 +60,8 @@ Untuk menjalankan proyek ini di komputer Anda, ikuti langkah-langkah berikut:
     python -m venv venv
     ```
 
+    *(Anda bisa mengganti `venv` dengan `.venv` jika suka)*
+
 3.  **Aktifkan Virtual Environment:**
 
       * **Windows (PowerShell/CMD):**
@@ -68,12 +70,13 @@ Untuk menjalankan proyek ini di komputer Anda, ikuti langkah-langkah berikut:
         ```
       * **macOS / Linux:**
         ```bash
-        source venv/bin/activate
         ```
+
+s       ource venv/bin/activate
+\`\`\`
 
 4.  **Install Dependensi (jika ada):**
     Proyek ini menggunakan modul standar Python, tetapi jika ada `requirements.txt`, jalankan:
-
     ```bash
     pip install -r requirements.txt
     ```
